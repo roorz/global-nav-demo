@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "global-nav-demo2": {
+    "global-nav-demo": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/global-nav-demo2",
+            "outputPath": "dist/global-nav-demo",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -61,18 +61,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "global-nav-demo2:build"
+            "browserTarget": "global-nav-demo:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "global-nav-demo2:build:production"
+              "browserTarget": "global-nav-demo:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "global-nav-demo2:build"
+            "browserTarget": "global-nav-demo:build"
           }
         },
         "test": {
@@ -106,7 +106,7 @@
         }
       }
     },
-    "global-nav-demo2-e2e": {
+    "global-nav-demo-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "prefix": "",
@@ -115,11 +115,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "global-nav-demo2:serve"
+            "devServerTarget": "global-nav-demo:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "global-nav-demo2:serve:production"
+              "devServerTarget": "global-nav-demo:serve:production"
             }
           }
         },
@@ -135,5 +135,5 @@
       }
     }
   },
-  "defaultProject": "global-nav-demo2"
+  "defaultProject": "global-nav-demo"
 }
