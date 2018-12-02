@@ -1,21 +1,115 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
+<header class="card" style="font-size: 12pt; margin-left: 42pt">
+  <div class="card-header">
+    <div class="float-left">
+      <span style="color: darkred; font-weight: 600">Global Navigation Demo</span>
+    </div>
+    <div class="float-right">
+      <span>Name / Company</span>
+      <i class="fa fa-sign-out-alt fa-lg fa-fw"></i>
+    </div>
+  </div>
+</header>
+
+<div class="glob-menu">
+  <div class="glob-menu-brand">
+    <a style="float: left" class="glob-menu-logo" href="http://springer.technology">
+      icon
+    </a>
+  </div>
+
+  <div class="accordion-group" style="clear:both">
+
+    <div class="glob-menu-icon" data-toggle="tooltop" title="Dashboard">
+      <a data-toggle="collapse" data-target="#example1">
+      <i class="fa fa-tachometer-alt fa-lg fa-fw"></i></a>
+    </div>
+
+    <div class="glob-menu-icon" data-toggle="tooltop" title="Example 2">
+      <a data-toggle="collapse" data-target="#example2">
+      <i class="fa fa-vial fa-lg fa-fw"></i></a>
+    </div>
+
+    <div class="glob-menu-icon" data-toggle="tooltop" title="Example 3">
+      <a data-toggle="collapse" data-target="#example3">
+      <i class="fa fa-database fa-lg fa-fw"></i></a>
+    </div>
+
+  </div>
+
+  <div id="menugroup">
+
+    <div class="pop-out-menu collapse" id="example1" data-parent="#menugroup">
+      <div class="card">
+        <div class="card-header">
+          Dashboard
+        </div>
+        <ul>
+          <li><a class="nav-link" href="#">List</a></li>
+          <li><a class="nav-link" href="#">Reports</a></li>
+          <li><a class="nav-link" href="#">Other</a></li>
+        </ul>
+      </div>
+      <div class="card footer">
+        <div class="card-header">
+          <div class="float-right">
+            <span class="badge badge-primary" style="margin-left: 1em"> DEV</span>
+            <span> v1.0.0</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="pop-out-menu collapse" id="example2" data-parent="#menugroup">
+      <div class="card">
+        <div class="card-header">
+          Example 2
+        </div>
+        <ul>
+          <li><a class="nav-link" href="#">List</a></li>
+          <li><a class="nav-link" href="#">Reports</a></li>
+          <li><a data-toggle="collapse" data-target="#config">Configuration</a></li>
+        </ul>
+        <div class="pop-out-sub-menu collapse" id="config">
+          <ul>
+            <li><a class="nav-link" href="#">Nuts</a></li>
+            <li><a class="nav-link" href="#">Bolts</a></li>
+            <li><a class="nav-link" href="#">Widgets</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="card footer">
+        <div class="card-header">
+          <div class="float-right">
+            <span class="badge badge-primary" style="margin-left: 1em"> DEV</span>
+            <span> v1.0.0</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="pop-out-menu collapse" id="example3" data-parent="#menugroup">
+      <div class="card">
+        <div class="card-header">
+          Example 3
+        </div>
+        <ul>
+          <li><a class="nav-link" href="#">List</a></li>
+          <li><a class="nav-link" href="#">Reports</a></li>
+          <li><a class="nav-link" href="#">Other</a></li>
+        </ul>
+      </div>
+      <div class="card footer">
+        <div class="card-header">
+          <div class="float-right">
+            <span class="badge badge-primary" style="margin-left: 1em"> DEV</span>
+            <span> v1.0.0</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
 <router-outlet></router-outlet>

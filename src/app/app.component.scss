@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 250px;
+    height: 40px;
+    background-color: #cecdcd;
+    border-top: 1px solid grey;
+}
+
+.collapsing {
+    -webkit-transition: none;
+    transition: none;
+    display: none;
+}
+
+.glob-menu-logo {
+    display: block;
+    width: 35px;
+    margin: 5px;
+    z-index: 1;
+    transition: all 0.5s;
+}
+
+.glob-menu-brand {
+    margin-bottom: 4px;
+    border-bottom: 1px solid #d0d0d0;
+}
+
+.glob-menu {
+    font-family: 'Lucida Sans';
+    font-size: 10pt;
+    font-weight: 200;
+    background-color: #d0d0d0;
+    position: fixed;
+    top: 0;
+    width: 54px;
+    height: 100%;
+    color: #303030;
+    border-right: 1px solid #909090;
+}
+
+.glob-menu a {
+    text-decoration: none;
+    color: #505050;
+}
+
+.glob-menu-icon {
+    line-height: 40px;
+    border-left: 3px solid transparent;
+    cursor: pointer;
+}
+
+.glob-menu-icon a {
+    padding: 10px;
+}
+
+.glob-menu-icon a i {
+    margin-right: 5px;
+}
+
+.glob-menu-icon:hover {
+    border-left: 3px solid #d19b3d;
+    background-color: #e0e0e0;
+}
+
+.pop-out-menu { 
+    font-family: 'Lucida Sans';
+    font-size: 10pt;
+    font-weight: 200;
+    background-color: #f0f0f0;
+    position: fixed;
+    top: 0;
+    left: 55px;
+    width: 196px;
+    height: 100%;
+    color: #303030;
+    border-right: 1px solid grey;
+    -webkit-box-shadow: 3px 0 3px -2px #888;
+            box-shadow: 3px 0 3px -2px #888;
+}
+
+.pop-out-menu .card-header {
+    height: 40px;
+}
+
+.pop-out-menu ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    line-height: 25px;
+}
+
+.pop-out-menu ul li {
+    padding: 0;
+    margin: 0;
+    border-left: 3px solid transparent;
+    cursor: pointer;
+}
+
+.pop-out-menu ul li a {
+    margin: 0;
+    padding-left: 15px;
+    padding-right: 5px;
+}
+
+.pop-out-menu ul li:hover {
+    border-left: 3px solid #d19b3d;
+    background-color: #e0e0e0;    
+}
+
+.pop-out-sub-menu {
+    border-top: 1px solid #a0a0a0;
+    margin-left: 2px;
+}
+
+.active {
+    border-left: 3px solid #d19b3d;
+    background-color: #f0f0f0 !important;
+}
+
+.nav-link {
+    padding: 0 !important;
+    margin: 0 !important;
+    padding-left: 15px !important;
+    text-decoration: none;
+    color: #505050;
+}
